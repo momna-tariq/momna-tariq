@@ -1,0 +1,78 @@
+header {
+    text-align: center;
+}
+body {
+    background-color: #dcf5f5;
+    color: #01293d;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    margin: 40pt;
+
+}
+nav {
+    text-align: center;  /* Centers all links inside the nav */
+}
+nav a { text-decoration: none; padding: 10px;
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 11pt;
+     }
+     nav a:link { color: #01293d; } 
+     nav a:visited { color: #451f87; } 
+     nav a:hover { color: #000066; }
+
+h1 {
+    text-align: center;
+    color: #01293d;
+    font-family: 'Serif';
+    font-size: 50pt;
+    font-weight: bold;
+}
+
+h2 {
+    color: #3496c7;
+    font-family: 'sans-serif';
+    font-size: 20pt;
+    font-style: italic;
+}
+h3 { color: #49bcc4;
+    font-family: Geneva;
+    font-size: 17pt;
+    font-weight: bold;
+
+
+}
+
+p {
+    color: #333333;    
+    font-family: monospace;         
+    font-size: 16px;            
+    line-height: 1.5;           
+    text-align: justify;        
+    margin-bottom: 20px;   
+} 
+table {
+
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.link, .description {
+    display: table-cell;
+    border: 1px solid #000;
+    padding: 10px;
+}
+.course-code {
+    display: table-cell;
+    width: 30%; /* Adjust the width for the course code column */
+    border: 1px solid #000;
+    padding: 10px;
+}
+.description {
+    width: 70%;
+}
