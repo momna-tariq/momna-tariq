@@ -76,11 +76,6 @@ table {
 .description {
     width: 70%;
 }
-#profileImage {
-    width: 200px; /* Ensure consistent width */
-    cursor: pointer;
-    transition: width 0.3s ease; /* Smooth transition for enlargement */
-}
 /* Dropdown button */
 .dropbtn {
     font-size: 20px;
