@@ -1,45 +1,61 @@
-// Prompt the user to enter their name
-var userName = prompt("Please enter your name:");
-
-// Store the name in a variable and display a welcome message
 window.onload = function() {
-    var welcomeMessage = "Welcome, " + userName + "!";
-    var heading = document.getElementById("welcome");
-    heading.innerHTML = welcomeMessage;
+    // Welcome message using user's name if stored
+    var userName = localStorage.getItem("name") || "Visitor";
+    document.getElementById("welcome").innerHTML = "Welcome, " + userName + "!";
 
-    // Change the background color of the body and font color of the heading
-    document.body.style.backgroundColor = "#dcf5f5";  // Light khaki background
-    heading.style.color = "#000080";  // Navy text color
+    // Retrieve form data if available
+    document.getElementById("name").value = localStorage.getItem("name") || "";
+    document.getElementById("email").value = localStorage.getItem("email") || "";
+    document.getElementById("favColor").value = localStorage.getItem("favColor") || "#ff0000";
+    document.getElementById("comments").value = localStorage.getItem("comments") || "";
+    document.getElementById("birthDate").value = localStorage.getItem("birthDate") || "";
 
-    // Additional style changes (for example, the h2 element)
-    var aboutMeHeading = document.getElementById("aboutMe");
-    aboutMeHeading.style.fontSize = "30px";  // Increase font size of the About Me section
-    aboutMeHeading.style.fontStyle = "italic";  // Change font style to italic
-}// Lab 5
-// Prompt the user to enter their name when the button is clicked
-function askName() {
-    var userName = prompt("Please enter your name:");
-    if (userName) {
-        document.getElementById("welcome").innerHTML = "Welcome, " + userName + "!";
+    document.getElementById("contactEmail").checked = localStorage.getItem("contactMethod") === "Email";
+    document.getElementById("contactPhone").checked = localStorage.getItem("contactMethod") === "Phone";
+
+    document.getElementById("interest1").checked = localStorage.getItem("interest1") === "true";
+    document.getElementById("interest2").checked = localStorage.getItem("interest2") === "true";
+    document.getElementById("interest3").checked = localStorage.getItem("interest3") === "true";
+};
+
+// Handle form submission and save data to localStorage
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from refreshing the page
+
+    // Save form data to localStorage
+    localStorage.setItem("name", document.getElementById("name").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+    localStorage.setItem("favColor", document.getElementById("favColor").value);
+    localStorage.setItem("comments", document.getElementById("comments").value);
+    localStorage.setItem("birthDate", document.getElementById("birthDate").value);
+
+    var contactMethod = document.querySelector("input[name='contactMethod']:checked");
+    if (contactMethod) {
+        localStorage.setItem("contactMethod", contactMethod.value);
     }
-}
 
-// Make the image clickable and enlarge when clicked
+    localStorage.setItem("interest1", document.getElementById("interest1").checked);
+    localStorage.setItem("interest2", document.getElementById("interest2").checked);
+    localStorage.setItem("interest3", document.getElementById("interest3").checked);
+
+    alert("Form data saved successfully!");
+});
+
+// Interactivity functions
 function enlargeImage() {
     var img = document.getElementById("profileImage");
-    if (img.style.width === "200px") {
-        img.style.width = "400px";  // Enlarge image
-    } else {
-        img.style.width = "200px";  // Reset to original size
-    }
+    img.style.width = img.style.width === "200px" ? "400px" : "200px";
 }
 
-// Toggle the dropdown menu
 function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if user clicks outside
+function changeColorOnHover(element, color) {
+    element.style.color = color;
+}
+
+// Close dropdown when clicking outside
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -50,9 +66,4 @@ window.onclick = function(event) {
             }
         }
     }
-}
-
-// Change color on mouseover and mouseout for nav items
-function changeColorOnHover(element, color) {
-    element.style.color = color;
-}
+};
