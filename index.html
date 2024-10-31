@@ -1,149 +1,121 @@
+<!-- https://momna-tariq.github.io/ -->
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Momna Tariq's Website</title>
     <header>
         <nav>
-            <!--
-             <a href="index.html"> Home &nbsp;</a>
-             <a href="Education.html"> Education &nbsp;</a>
-             <a href="Experience.html">Experience &nbsp; </a>
-                -->
-                <div class="table">
-                    <div class="column"> 
-                        <div class="row">  
-                            <div class="link"><a href="index.html">Home &nbsp;</a></div>
-                        </div>
-                        <div class="row"> 
-                            <div class="link"><a href="Education.html">Education &nbsp;</a></div>
-                        </div>
-                        <div class="row"> 
-                            <div class="link"><a href="Experience.html">Experience &nbsp;</a></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dropdown menu -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+            </div>
             <div class="dropdown">
                 <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="https://www.linkedin.com/in/momnatariq/" target="_blank">LinkedIn</a>
                     <a href="https://github.com/momna-tariq/momna-tariq.github.io" target="_blank">GitHub</a>
-                    
                 </div>
             </div>
         </nav>
     </header>
-    </div>
-    
-    <head>
-        <meta charset=""utf-8: />
-        <script src="main.js"></script>
-        <link rel="stylesheet" href="styles.css">
-        <title> Momna Tariq Website</title>
-    </head>
-    <h1>Momna&apos;s Website</h1>
-    
-    
-    
-    <body>
-        <h1 id="welcome">Momna Tariq</h1> <!-- ID for JavaScript to target -->
 
-        <!-- Clickable image of yourself -->
-        <img id="profileImage" src="Images/m.jpeg" alt="Profile Image" onmouseover="enlargeImage()" style="width:200px; cursor: pointer;">
+    <h1 id="welcome">Momna Tariq</h1>
+    <img id="profileImage" src="Images/m.jpeg" alt="Profile Image" onmouseover="enlargeImage()" style="width:200px; cursor: pointer;">
 
-        <h2 id="aboutMe" onmouseover="changeColorOnHover(this, 'blue')" onmouseout="changeColorOnHover(this, '#3496c7')">About Me</h2>
-        I am a student in Business Technology Management. 
-        Currently in my fourth year of my 5 year program. 
-        I was recently doing a 16 month co-op at L3Harris as a BI Developer.
-        </p>
-        <hr>
+    <h2 id="aboutMe" onmouseover="changeColorOnHover(this, 'blue')" onmouseout="changeColorOnHover(this, '#3496c7')">About Me</h2>
+    <p>I am a student in Business Technology Management. Currently in my fourth year of my 5-year program. I recently completed a 16-month co-op at L3Harris as a BI Developer.</p>
+    <hr>
 
-        <h2>Education</h2>
-        <dl>
-            <dt> Toronto Metrpolitan University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sep 2021 - Apr 2026</dt>
-            <dt> <i> Business Technology Management</i></dt>
-            <dd> BTM is a commerce program that bridges the connections between operational careers in the corporate world yielded by technical tools.</dd>
-            <ul>
-                <li> CGPA: 3.70</li>
-                <li> Favourite Course: ITM 500 <dd> Data and Information Management is an SQL based course that was very useful and practical to me at my position at L3Harris. Understanding ERP and DBMS impacted my role positively.</dd></li>
-            </ul>
-
-            <dt> Erindale Secondary School &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sep 2017 - Jun 2021</dt>
-            <dt> <i> Ontario Secondary School Diploma</i></dt>
-        </dl>
-        <hr>
-
-        <h2>My Favourite Courses</h2>
-         <div class ="table">
-            <div class="column"> 
-                <div class="row"> 
-                    <div class="course-code"> CPS109</div> 
-                    <div class="description"> Introduction To Computer Science </div>
-                </div>
-                <div class="row">
-                     <div class="course-code"> ITM780</div> 
-                     <div class="description"> Web Design and Management </div>
-                </div>
-                <div class="row"> 
-                    <div class="course-code"> ITM618</div>
-                    <div class="description"> Business Intelligence and Analytics </div>
-                 </div>
-                <div class="row"> 
-                    <div class="course-code"> ITM500</div>
-                    <div class="description"> Data and Information Management </div>
-                 </div>
-                <div class="row">
-                     <div class="course-code"> ITM200</div>
-                     <div class="description"> Fundamentals of Programming </div>
-                 </div>
-            </div>
-            
-
-
-            
-            
-         </div>
-         <!--
+    <h2>Education</h2>
+    <dl>
+        <dt>Toronto Metropolitan University (Sep 2021 - Apr 2026)</dt>
+        <dt><i>Business Technology Management</i></dt>
+        <dd>BTM is a commerce program that bridges operational careers in the corporate world with technical tools.</dd>
         <ul>
-            <li> CPS109 - Introduction To Computer Science</li>
-            <li> ITM780 - Web Design and Management</li>
-            <li> ITM618 - Business Intelligence and Analytics</li>
-            <li> ITM500 - Data and Information Management</li>
-            <li> ITM200 - Fundamentals of Programming</li>
-        </ul> -->
-        <hr> 
-
-        <h3> Educational Awards</h3>
-        <ul>
-            <li> Deans List: 2021-2022</li>
-            <li> Top 10% Engaged: 2021-2023</li>
+            <li>CGPA: 3.70</li>
+            <li>Favourite Course: ITM 500
+                <dd>Data and Information Management is an SQL-based course that was practical for my role at L3Harris.</dd>
+            </li>
         </ul>
-        <hr>
 
-        <h3>Extra Curricular Activities</h3>
-        <dl>
-        <dt> Clubs</dt>
+        <dt>Erindale Secondary School (Sep 2017 - Jun 2021)</dt>
+        <dt><i>Ontario Secondary School Diploma</i></dt>
+    </dl>
+    <hr>
+
+    <h2>My Favourite Courses</h2>
+    <div class="table">
+        <div class="column">
+            <div class="row"><div class="course-code">CPS109</div><div class="description">Introduction To Computer Science</div></div>
+            <div class="row"><div class="course-code">ITM780</div><div class="description">Web Design and Management</div></div>
+            <div class="row"><div class="course-code">ITM618</div><div class="description">Business Intelligence and Analytics</div></div>
+            <div class="row"><div class="course-code">ITM500</div><div class="description">Data and Information Management</div></div>
+            <div class="row"><div class="course-code">ITM200</div><div class="description">Fundamentals of Programming</div></div>
+        </div>
+    </div>
+    <hr>
+
+    <h3>Educational Awards</h3>
+    <ul>
+        <li>Dean's List: 2021-2022</li>
+        <li>Top 10% Engaged: 2021-2023</li>
+    </ul>
+    <hr>
+
+    <h3>Extracurricular Activities</h3>
+    <dl>
+        <dt>Clubs</dt>
         <ul>
             <li>TedPack Leader: 2021-2022</li>
-            <li> TedPack Mentor: 2022-2023</li>
+            <li>TedPack Mentor: 2022-2023</li>
         </ul>
         
-        <dt> Hobbies</dt>
+        <dt>Hobbies</dt>
         <ul>
-            <li> Guitar</li>
-            <li> Baking/Cooking</li>
-            <li> Travelling</li>
-            
+            <li>Guitar</li>
+            <li>Baking/Cooking</li>
+            <li>Traveling</li>
         </ul>
-        </dl>
-        <hr>
-        
-     <footer> 
-        <a href="https://momna-tariq.github.io/"> GitHub</a>
-        <br>
-        <small>
-            <i>Copyright &copy; 2024 Momna Tariq</i>
-            
-        </small> 
-     </footer>     
-    </body>
+    </dl>
+    <hr>
+
+    <!-- Contact Form for Lab 6 Assignment -->
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label for="favColor">Favorite Color:</label>
+        <input type="color" id="favColor" value="#ff0000"><br><br>
+
+        <label>Preferred Contact Method:</label>
+        <input type="radio" id="contactEmail" name="contactMethod" value="Email"> Email
+        <input type="radio" id="contactPhone" name="contactMethod" value="Phone"> Phone<br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4" cols="50" placeholder="Any additional information..."></textarea><br><br>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="interest1" value="Sports"> Sports
+        <input type="checkbox" id="interest2" value="Music"> Music
+        <input type="checkbox" id="interest3" value="Art"> Art<br><br>
+
+        <label for="birthDate">Birthdate:</label>
+        <input type="date" id="birthDate"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <footer>
+        <small><i>&copy; 2024 Momna Tariq</i></small>
+    </footer>
+</body>
 </html>
