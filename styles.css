@@ -117,4 +117,15 @@ button[type="reset"] {
 .show {
     display: block;
 }
+#profileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 5s ease-in-out; /* Slower duration with smoother easing */
+    border-radius: 50%;
+}
+
+#profileImage:hover {
+    transform: scale(1); /* Apply scaling effect */
+}
 
