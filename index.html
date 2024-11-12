@@ -1,121 +1,75 @@
 <!-- https://momna-tariq.github.io/ -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Momna Tariq's Website</title>
+</head>
+
+    
+
+
+<body>
+
     <header>
         <nav>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="Education.html">Education</a>
                 <a href="Experience.html">Experience</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Connect.html">Contact</a>
             </div>
-            <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="https://www.linkedin.com/in/momnatariq/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/momna-tariq/momna-tariq.github.io" target="_blank">GitHub</a>
-                </div>
-            </div>
+                
         </nav>
     </header>
 
     <h1 id="welcome">Momna Tariq</h1>
-    <img id="profileImage" src="Images/m.jpeg" alt="Profile Image" onmouseover="enlargeImage()" style="width:200px; cursor: pointer;">
+    <img id="profileImage" src="Images/m.jpeg" alt="Profile Image" onmouseover="enlargeImage()" onmouseout="resetImage()" style="width:200px; cursor: pointer;">
 
-    <h2 id="aboutMe" onmouseover="changeColorOnHover(this, 'blue')" onmouseout="changeColorOnHover(this, '#3496c7')">About Me</h2>
-    <p>I am a student in Business Technology Management. Currently in my fourth year of my 5-year program. I recently completed a 16-month co-op at L3Harris as a BI Developer.</p>
-    <hr>
+    <h2>About Me</h2>
+    <p>I am a 4th year student in Business Technology Management at Toronto Metropolitan University. Currently in my fourth year of my 5 year program. 
+        With one more academic year remaining, I am looking for a 5th co-op term in Summer 2025. I would be interested in roles involving Data Analytics, UI/UX Design, 
+        I have also recently developed a passion for Website Developement/Design.
+    </p>
+    <h2>Experience</h2>
 
-    <h2>Education</h2>
-    <dl>
-        <dt>Toronto Metropolitan University (Sep 2021 - Apr 2026)</dt>
-        <dt><i>Business Technology Management</i></dt>
-        <dd>BTM is a commerce program that bridges operational careers in the corporate world with technical tools.</dd>
-        <ul>
-            <li>CGPA: 3.70</li>
-            <li>Favourite Course: ITM 500
-                <dd>Data and Information Management is an SQL-based course that was practical for my role at L3Harris.</dd>
-            </li>
-        </ul>
+    <p>I recently completed a 16-month internship at L3Harris Technologies as a Business Intelligence Developer. Working on a small team of 2 other members allowed me to leverage their experience and 
+        explore until my clock ran out. As the only intern this meant handling large projects autonomously. When I first joined I had no idea the power that data analytics can have. It was always something
+        I knew I wished to pursure but had no sense of direction. A year and a half later, I can tell you how important a Business Intelligence team is for a company in terms of effiency and telling a story
+        with data.
+    </p>
+    <p> Previously, I worked for Halton Healthcare as an Information and Communications Technology Support. Initially this was supposed to be an overall support role.
+        But this is where I first got to learn about resources such as Power BI Dashboards and how this impacted demographics. 
+    </p>
+    <p>
+        I also had to opportunity of sharing my passion for STEM related fields by working as a camp counselor at a STEM Camp. Co-counsellors and I worked deligiently to create
+        a fun curriculum that helps kids aged 3-12 years old learn and become exposed to STEM related subjects.
+    </p>
+    <p> During univerity, I've also taken part in many extra-curriculars such as volunteering to be a TedPack Leader/Mentor, 
+        Business conpetitions and Ryerson Data Science Club. 
+    </p>
+    
+    <h2>Other</h2>
 
-        <dt>Erindale Secondary School (Sep 2017 - Jun 2021)</dt>
-        <dt><i>Ontario Secondary School Diploma</i></dt>
-    </dl>
-    <hr>
+    <p>I like to spend my free time indulgin in my many hobbies. Depending on my mood I jump between baking, cooking, long drives and exploring new towns/lakes with friends.
+        I enjoying making friends and experiencing my hobbies with them. If you make it to my favourites I will share my love for baking with you by giving you treats :). 
+    </p>
+    <p> My latest interest is playing guitar (I take song requests). In due time, I'm hoping to learn in theory. I also plan on getting back to art and painting soon.</p>
+    <p> Around the clock, I am a serial consumer of music and rewatching comedy sitcoms to pass time. My favourite is Modern Family.</p>
 
-    <h2>My Favourite Courses</h2>
-    <div class="table">
-        <div class="column">
-            <div class="row"><div class="course-code">CPS109</div><div class="description">Introduction To Computer Science</div></div>
-            <div class="row"><div class="course-code">ITM780</div><div class="description">Web Design and Management</div></div>
-            <div class="row"><div class="course-code">ITM618</div><div class="description">Business Intelligence and Analytics</div></div>
-            <div class="row"><div class="course-code">ITM500</div><div class="description">Data and Information Management</div></div>
-            <div class="row"><div class="course-code">ITM200</div><div class="description">Fundamentals of Programming</div></div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+          <a href="https://www.linkedin.com/in/momnatariq/" class="btn btn-outline-primary btn-sm">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/momna-tariq/momna-tariq.github.io" class="btn btn-outline-dark btn-sm">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-    </div>
-    <hr>
-
-    <h3>Educational Awards</h3>
-    <ul>
-        <li>Dean's List: 2021-2022</li>
-        <li>Top 10% Engaged: 2021-2023</li>
-    </ul>
-    <hr>
-
-    <h3>Extracurricular Activities</h3>
-    <dl>
-        <dt>Clubs</dt>
-        <ul>
-            <li>TedPack Leader: 2021-2022</li>
-            <li>TedPack Mentor: 2022-2023</li>
-        </ul>
-        
-        <dt>Hobbies</dt>
-        <ul>
-            <li>Guitar</li>
-            <li>Baking/Cooking</li>
-            <li>Traveling</li>
-        </ul>
-    </dl>
-    <hr>
-
-    <!-- Contact Form for Lab 6 Assignment -->
-    <h2>Contact Form</h2>
-    <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name"><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email"><br><br>
-
-        <label for="favColor">Favorite Color:</label>
-        <input type="color" id="favColor" value="#ff0000"><br><br>
-
-        <label>Preferred Contact Method:</label>
-        <input type="radio" id="contactEmail" name="contactMethod" value="Email"> Email
-        <input type="radio" id="contactPhone" name="contactMethod" value="Phone"> Phone<br><br>
-
-        <label for="comments">Comments:</label>
-        <textarea id="comments" rows="4" cols="50" placeholder="Any additional information..."></textarea><br><br>
-
-        <label>Interests:</label>
-        <input type="checkbox" id="interest1" value="Sports"> Sports
-        <input type="checkbox" id="interest2" value="Music"> Music
-        <input type="checkbox" id="interest3" value="Art"> Art<br><br>
-
-        <label for="birthDate">Birthdate:</label>
-        <input type="date" id="birthDate"><br><br>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-    </form>
-
-    <footer>
-        <small><i>&copy; 2024 Momna Tariq</i></small>
-    </footer>
+      </footer>   
 </body>
 </html>
