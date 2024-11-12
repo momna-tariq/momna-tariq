@@ -1,7 +1,5 @@
 window.onload = function() {
-    // Welcome message using user's name if stored
-    var userName = localStorage.getItem("name") || "Visitor";
-    document.getElementById("welcome").innerHTML = "Welcome, " + userName + "!";
+    // hello, I am cursor function (to be added)
 
     // Retrieve form data if available
     document.getElementById("name").value = localStorage.getItem("name") || "";
@@ -44,7 +42,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 // Interactivity functions
 function enlargeImage() {
     var img = document.getElementById("profileImage");
-    img.style.width = img.style.width === "200px" ? "400px" : "200px";
+    img.style.transform = "scale(1.5)"; // Scale up to 1.5 times original size
+    img.style.transition = "transform 0.3s ease"; // Smooth transition effect
+}
+
+function resetImage() {
+    var img = document.getElementById("profileImage");
+    img.style.transform = "scale(1)"; // Return to original size
 }
 
 function toggleDropdown() {
