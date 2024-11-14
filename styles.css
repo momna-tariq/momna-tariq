@@ -63,7 +63,7 @@ header {
 form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0;
+    padding: 20pt;
     background: none; /* No background */
     border: none; /* No border */
 }
@@ -164,5 +164,146 @@ footer {
 
 #profileImage:hover {
     transform: scale(1); /* Apply scaling effect */
+}
+
+/* Styling for the guitar exhibit section */
+#guitar-exhibit {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f9fa; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#guitar-exhibit h2 {
+    color: #01293d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#guitar-exhibit video {
+    max-width: 100%;
+    border-radius: 8px;
+    outline: none;
+}
+
+#guitar-exhibit p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+/* Base styling for text size buttons */
+.text-size-button {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.text-size-button:hover {
+    background-color: #333;
+}
+
+/* Specific sizes for each button */
+.text-size-button.small {
+    font-size: 1rem; /* Small button */
+    width: 35px;
+    height: 35px;
+}
+
+.text-size-button.medium {
+    font-size: 1.25rem; /* Medium button */
+    width: 45px;
+    height: 45px;
+}
+
+.text-size-button.large {
+    font-size: 1.5rem; /* Large button */
+    width: 55px;
+    height: 55px;
+}
+/* Base styling for the color mode button */
+.color-mode-button {
+    width: auto;
+    padding: 10px 15px;  /* Add more padding for better spacing */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+.color-mode-button:hover {
+    background-color: #333;
+}
+
+
+/* General styling for the image gallery section */
+#image-gallery {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image-gallery h2 {
+    margin-bottom: 20px;
+}
+
+/* Grid layout for the images */
+.image-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Each image container with a max width to standardize size */
+.image-container {
+    flex: 1 1 300px; /* Ensures each image takes up a standard width */
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Styling for the images to fit within the container */
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for the alt text toggle button */
+.alt-text-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #3496c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alt-text-button:hover {
+    background-color: #2577a6;
+}
+
+/* Styling for the alt text */
+.alt-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
 }
 
