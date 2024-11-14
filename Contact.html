@@ -11,38 +11,41 @@
 <body>
 
     <!-- Main Header Section -->
-    <header>
-      <nav>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="Experience.html">Experience</a>
-          <a href="Projects.html">Projects</a>
-          <a href="Contact.html">Contact</a>
-        </div>
-      </nav>
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Experience.html">Experience</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Exhibit.html">Exhibit</a>
+        <a href="Contact.html">Contact</a>
 
-      <h2> Contact Me</h2>
-    </header>
+      </div>
+    </nav>
+
+    <h2> Contact Me</h2>
+  </header>
 
     <!-- Main Content -->
-    <main>
-      <section class="contact">
-        
-          <form id="contactForm">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
-              
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-              
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-              
-              <button type="submit">Submit</button>
-              <button type="button" id="clearStorage">Reset/Clear</button>
-          </form>
-      </section>
+  <main>
+    <section class="contact">
+      <!-- Form for collecting contact information -->
+      <form id="contactForm"> <!-- Added id="contactForm" for JavaScript targeting -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- id="name" to match JavaScript -->
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- id="email" to match JavaScript -->
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea> <!-- id="message" to match JavaScript -->
+  
+        <button type="submit">Submit</button> <!-- Submit button for form submission -->
+        <button type="button" id="clearStorage">Reset/Clear</button> <!-- Added id="clearStorage" for JavaScript targeting -->
+      </form>
+    </section>
   </main>
+  
   
 
     <!-- Footer Section -->
