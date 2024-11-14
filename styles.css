@@ -246,6 +246,18 @@ footer {
 .color-mode-button:hover {
     background-color: #333;
 }
+.colorblind-mode {
+    background-color: #000;
+    color: #FFD700; /* High contrast yellow text */
+}
+
+.colorblind-mode h1,
+.colorblind-mode h2,
+.colorblind-mode p {
+    color: #FFD700; /* Ensures all main text elements have high contrast */
+}
+
+
 
 
 /* General styling for the image gallery section */
