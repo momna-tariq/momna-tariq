@@ -1,44 +1,5 @@
 window.onload = function() {
     // hello, I am cursor function (to be added)
-
-    // Retrieve form data if available
-    document.getElementById("name").value = localStorage.getItem("name") || "";
-    document.getElementById("email").value = localStorage.getItem("email") || "";
-    document.getElementById("favColor").value = localStorage.getItem("favColor") || "#ff0000";
-    document.getElementById("comments").value = localStorage.getItem("comments") || "";
-    document.getElementById("birthDate").value = localStorage.getItem("birthDate") || "";
-
-    document.getElementById("contactEmail").checked = localStorage.getItem("contactMethod") === "Email";
-    document.getElementById("contactPhone").checked = localStorage.getItem("contactMethod") === "Phone";
-
-    document.getElementById("interest1").checked = localStorage.getItem("interest1") === "true";
-    document.getElementById("interest2").checked = localStorage.getItem("interest2") === "true";
-    document.getElementById("interest3").checked = localStorage.getItem("interest3") === "true";
-};
-
-// Handle form submission and save data to localStorage
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form from refreshing the page
-
-    // Save form data to localStorage
-    localStorage.setItem("name", document.getElementById("name").value);
-    localStorage.setItem("email", document.getElementById("email").value);
-    localStorage.setItem("favColor", document.getElementById("favColor").value);
-    localStorage.setItem("comments", document.getElementById("comments").value);
-    localStorage.setItem("birthDate", document.getElementById("birthDate").value);
-
-    var contactMethod = document.querySelector("input[name='contactMethod']:checked");
-    if (contactMethod) {
-        localStorage.setItem("contactMethod", contactMethod.value);
-    }
-
-    localStorage.setItem("interest1", document.getElementById("interest1").checked);
-    localStorage.setItem("interest2", document.getElementById("interest2").checked);
-    localStorage.setItem("interest3", document.getElementById("interest3").checked);
-
-    alert("Form data saved successfully!");
-});
-
 // Interactivity functions
 function enlargeImage() {
     var img = document.getElementById("profileImage");
@@ -57,17 +18,67 @@ function toggleDropdown() {
 
 function changeColorOnHover(element, color) {
     element.style.color = color;
+} 
 }
 
-// Close dropdown when clicking outside
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+function loadFormData() {
+    // Load saved values from localStorage into form fields (Adjusted to match your HTML IDs)
+    document.getElementById("name").value = localStorage.getItem("name") || "";
+    document.getElementById("email").value = localStorage.getItem("email") || "";
+    document.getElementById("message").value = localStorage.getItem("message") || "";
+}
+
+// Call function to load data when page loads
+//loadFormData();
+
+// Save form data to localStorage on form submission
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission from refreshing the page
+
+    // Save form fields to localStorage (Adjusted to match your HTML IDs)
+    localStorage.setItem("name", document.getElementById("name").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+    localStorage.setItem("message", document.getElementById("message").value);
+
+    
+
+    // Reload the page to reset the form
+    location.reload();
+}); 
+
+// Clear form data and localStorage when reset button is clicked
+document.getElementById("clearStorage").addEventListener("click", function() {
+    localStorage.clear(); // Clear all localStorage data
+    document.getElementById("contactForm").reset(); // Reset form fields
+    
+});
+function setTextSize(size) {
+    let fontSize;
+
+    // Define font sizes for each option
+    if (size === 'small') {
+        fontSize = '12px';
+    } else if (size === 'medium') {
+        fontSize = '16px';
+    } else if (size === 'large') {
+        fontSize = '20px';
     }
-};
+
+    // Apply the selected font size to all text elements
+    document.querySelectorAll('h1, h2, p').forEach(element => {
+        element.style.fontSize = fontSize;
+    });
+}
+
+function toggleColorMode() {
+    // Toggle the 'colorblind-mode' class on the body element
+    document.body.classList.toggle('colorblind-mode');
+}
+function toggleAltText(altTextId) {
+    var altTextElement = document.getElementById(altTextId);
+    if (altTextElement.style.display === "none") {
+        altTextElement.style.display = "block";
+    } else {
+        altTextElement.style.display = "none";
+    }
+}
