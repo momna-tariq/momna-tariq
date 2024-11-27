@@ -4,7 +4,11 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Momna, Tariq, Website, Resume, Data"> <!-- keywords apparently outdated-->
+    <meta name="description" content="Explore Momna Tariq's personal website, 
+    showcasing a professional resume, data projects, and insights into web design.">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Momna Tariq</title>
@@ -28,18 +32,43 @@
         </nav>
     </header>
 
-    <!-- Text size buttons + Accessible View for visually impaired-->
+    <!-- Text size buttons + Accessible View for visually impaired
     <div style="margin: 20px;">
         <button onclick="setTextSize('small')" class="text-size-button small">A</button>
         <button onclick="setTextSize('medium')" class="text-size-button medium">A</button>
         <button onclick="setTextSize('large')" class="text-size-button large">A</button> <br>
         <button onclick="toggleColorMode()" class="color-mode-button">Accessible View</button>
     </div>
+    -->
+    <div class="typewriter">
+        <h1>Hi! I'm <span class="highlight">Momna,</span></h1>
+        <h2 id="typed-output"></h2>
+    </div>
     
-    
+    <img id="profileImage" src="Images/m.jpeg" alt="Profile Image"  style="width:200px; cursor: pointer;">
+    </div>
+    <h2>SEO & SMO Techniques <a href="https://www.instagram.com/torontomet/?hl=en" target="_blank" style="a:hover {color:#92bed2;}" >
+        <i class="fab fa-instagram"></i> </a>
+    </h2>
+    <hr>
+    <p>Keyword research improves SEO by helping websites rank higher for relevant searches (Patel, 2021). Meta descriptions enhance click-through rates by summarizing pages effectively (Dean, 2023). Backlinks boost credibility and rankings by signaling trust to search engines (Moz, 2023).</p>
+    <p>Social sharing buttons like the Facebook Like button increase content visibility by encouraging user engagement (Chitwood, 2022). Instagram’s visual storytelling strengthens brand loyalty and connection with audiences (Carbone, 2023). Twitter hashtags help brands participate in trends, expanding their reach (Hootsuite, 2023).</p>
+    <p>The Facebook Like button drives engagement and content sharing, amplifying reach through user networks (Chitwood, 2022).</p>
+    <p>Instagram feed widgets connect websites to social profiles, boosting visitor interaction and follower growth (Carbone, 2023).</p>
+    <p>Backlinks improve rankings and bring referral traffic, enhancing credibility and conversion rates (Moz, 2023).</p>
+    <p>Twitter hashtags attract niche audiences by linking brands to relevant discussions and trends (Hootsuite, 2023).</p>
 
-    <h1 id="welcome">Momna Tariq</h1>
-    <img id="profileImage" src="Images/m.jpeg" alt="Profile Image" onmouseover="enlargeImage()" onmouseout="resetImage()" style="width:200px; cursor: pointer;">
+    <h3 style ="padding-left: 40pt"> References</h3>
+    
+        <ol style="padding-left: 70pt">
+            <li>Carbone, L. (2023). The power of Instagram for businesses. Social Media Insights. Retrieved from https://www.socialmediainsights.com</li>
+            <li>Chitwood, D. (2022). The role of social media buttons in website engagement. Social Metrics. Retrieved from https://www.socialmetrics.com</li>
+            <li>Dean, B. (2023). Meta descriptions: The key to better click-through rates. Backlinko. Retrieved from https://www.backlinko.com</li>
+            <li>Moz. (2023). The ultimate guide to backlinks. Moz Blog. Retrieved from https://www.moz.com</li>
+            <li>Patel, N. (2021). Mastering keyword research for SEO success. Neil Patel Blog. Retrieved from https://neilpatel.com</li>
+            <li>Hootsuite. (2023). How to use hashtags to grow your brand on Twitter. Hootsuite Blog. Retrieved from https://www.hootsuite.com</li>
+        </ol>
+    <hr>
 
     <h2>About Me</h2>
     <p>I am a 4th year student in Business Technology Management at Toronto Metropolitan University. Currently in my fourth year of my 5 year program. 
@@ -75,12 +104,24 @@
 
     <footer class="bg-light text-center text-lg-start">
         <div class="container p-4">
-          <a href="https://www.linkedin.com/in/momnatariq/" class="btn btn-outline-primary btn-sm">
+          <a href="https://www.linkedin.com/in/momnatariq/" class="btn btn-outline-primary btn-sm" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/momna-tariq/momna-tariq.github.io" class="btn btn-outline-dark btn-sm">
+          <a href="https://github.com/momna-tariq/momna-tariq.github.io" class="btn btn-outline-dark btn-sm" target="_blank">
             <i class="fab fa-github"></i>
           </a>
+          <a href="https://open.spotify.com/user/momna25?si=97bd3c715b8c46d3" class="btn btn-outline-primary btn-sm" target="_blank">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href= "mailto:momna.tariq@torontomu.ca" class="btn btn-outline-primary btn-sm" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href= "https://vsco.co/momna-jpg/gallery" class="btn btn-outline-primary btn-sm" target="_blank">
+            <i class="fa-solid fa-camera-retro"></i>
+          </a>
+          <a href="Momna Tariq Resume.pdf" target="_blank">
+            <i class="fas fa-file"></i>
+        </a> 
         </div>
       </footer>   
 </body>
