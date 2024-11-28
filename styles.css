@@ -191,10 +191,7 @@ footer {
     margin-right: auto;
     transition: transform 5s ease-in-out; /* Slower duration with smoother easing */
     border-radius: 50%;
-    
-
 }
-
 /* typewrite effect */ 
 /* Style the typed text */
 #typed-output {
