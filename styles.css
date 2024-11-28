@@ -137,7 +137,6 @@ input, textarea {
 }
 /* Button styling without border */
 button {
-    width: 35%;
     padding: 10px;
     margin-top: 10px;
     border: none;
@@ -252,91 +251,6 @@ footer {
 
 /* ---------------------- ignore at this point--------------------------- */ 
 /* Lab 8 */
-/* General styling for the image gallery section */
-#image-gallery {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f7f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#image-gallery h2 {
-    margin-bottom: 20px;
-}
-
-/* Grid layout for the images */
-.image-gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Each image container with a max width to standardize size */
-.image-container {
-    flex: 1 1 350px; /* Ensures each image takes up a standard width */
-    max-width: 300px;
-    text-align: center;
-}
-
-/* Styling for the images to fit within the container */
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Styling for the alt text toggle button */
-.alt-text-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #3496c7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.alt-text-button:hover {
-    background-color: #2577a6;
-}
-
-/* Styling for the alt text */
-.alt-text {
-    font-size: 0.9rem;
-    color: #333;
-    margin-top: 5px;
-}
-/* Styling for the guitar exhibit section */
-#guitar-exhibit {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f7f9fa; /* Light background for contrast */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#guitar-exhibit h2 {
-    color: #01293d;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-#guitar-exhibit video {
-    max-width: 100%;
-    border-radius: 8px;
-    outline: none;
-}
-
-#guitar-exhibit p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 10px;
-}
 /* Base styling for text size buttons */
 .text-size-button {
     width: 40px;
