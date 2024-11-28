@@ -18,16 +18,19 @@ body {
 a {
     color: #3496c7; /* Set the icon's initial color */
     text-decoration: none; /* Prevent underline */
-    font-size: 50px; /* Adjust size as needed */
+    /* font-size: 50px; Adjust size as needed */
     margin: 0 7px; /* Optional: Add space between icons */
 }
 #contact-socials  a {
     margin: 0 45px;
-    color: #91bdd1
+    color: #91bdd1;
+    font-size: 30px;
+
 }
 
 #contact-socials  a:hover {
     color: #3496c7;
+    
     
 }
 
@@ -133,7 +136,7 @@ input, textarea {
 
 /* Button styling without border */
 button {
-    width: 15%;
+    width: 25%;
     padding: 10px;
     margin-top: 10px;
     border: none;
