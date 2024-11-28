@@ -45,23 +45,23 @@ hr{
 /* Targeting h2 specifically in the header */
 header h2, h2, h3  {
     text-align: left;
-    margin-left: 50px;
-    margin-right: 50px; /* Add space from the left edge */
+    margin-left: 30px;
+    margin-right: 30px; /* Add space from the left edge */
     color: #92bed2; /* Consistent color */
     padding-top: 20px
 }
 p {
     text-align: left;
-    margin-left: 50px; /* Add space from the left edge */
-    margin-right: 50px; /* Add space from the right edge */
+    margin-left: 30px; /* Add space from the left edge */
+    margin-right: 30px; /* Add space from the right edge */
     padding-bottom: 10px;
     margin-top: 20px;
 }
 
 ol{
     text-align: left;
-    margin-left: 55px; /* Add space from the left edge */
-    margin-right: 55px; /* Add space from the right edge */
+    margin-left: 40px; /* Add space from the left edge */
+    margin-right: 40px; /* Add space from the right edge */
     padding-bottom: 30px;
     margin-top: 20px;
 }
@@ -102,15 +102,19 @@ label {
     font-weight: bold;
     color: #01293d;
     margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 11pt;
 }
 
 input, textarea {
-    width: 100%;
+    width: 500px;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    padding-bottom: 5px;
+    
 }
 
 /* Button styling without border */
@@ -182,6 +186,118 @@ footer {
 
 }
 
+/* typewrite effect */ 
+/* Style the typed text */
+#typed-output {
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem; /* Match the font size */
+    font-weight: bold;
+    color: #01293d;
+    min-height: 2.5rem; /* Ensures the height stays consistent, matching the tallest string */
+}
+
+.typed-cursor {
+    font-size: 2rem; /* Match the font size of #typed-output */
+    color: #01293d; /* Match the text color */
+    vertical-align: baseline; /* Align cursor with the baseline of the text */
+    animation: blink 0.7s step-end infinite; /* Blinking effect */
+}
+
+/* Fix blinking cursor alignment */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+.typewriter {
+    text-align: center; /* Center all child elements */
+    margin-bottom: 0; /* Remove extra space below */
+    padding: 0;
+    line-height: 1.2; /* Reduce line spacing */
+}
+
+.typewriter h1 {
+    margin: 0; /* Remove default margins */
+    font-size: 2.5rem; /* Adjust size as needed */
+}
+
+.typewriter h2 {
+    margin: 10px 0; /* Add consistent spacing */
+    font-size: 2rem; /* Adjust size as needed */
+    color: #01293d;
+    padding-top: 0%;
+}
+#typed-output:empty::before {
+    content: " "; /* Non-breaking space */
+    display: inline-block;
+}
+
+.highlight {
+    color: #3496c7; /* Replace with the exact blue color from your site */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+/* ---------------------- ignore at this point--------------------------- */ 
+/* Lab 8 */
+/* General styling for the image gallery section */
+#image-gallery {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image-gallery h2 {
+    margin-bottom: 20px;
+}
+
+/* Grid layout for the images */
+.image-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Each image container with a max width to standardize size */
+.image-container {
+    flex: 1 1 350px; /* Ensures each image takes up a standard width */
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Styling for the images to fit within the container */
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for the alt text toggle button */
+.alt-text-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #3496c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alt-text-button:hover {
+    background-color: #2577a6;
+}
+
+/* Styling for the alt text */
+.alt-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
+}
 /* Styling for the guitar exhibit section */
 #guitar-exhibit {
     text-align: center;
@@ -271,119 +387,4 @@ footer {
 .colorblind-mode h2,
 .colorblind-mode p {
     color: #FFD700; /* Ensures all main text elements have high contrast */
-}
-
-
-
-
-/* General styling for the image gallery section */
-#image-gallery {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f7f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#image-gallery h2 {
-    margin-bottom: 20px;
-}
-
-/* Grid layout for the images */
-.image-gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Each image container with a max width to standardize size */
-.image-container {
-    flex: 1 1 350px; /* Ensures each image takes up a standard width */
-    max-width: 300px;
-    text-align: center;
-}
-
-/* Styling for the images to fit within the container */
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Styling for the alt text toggle button */
-.alt-text-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #3496c7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.alt-text-button:hover {
-    background-color: #2577a6;
-}
-
-/* Styling for the alt text */
-.alt-text {
-    font-size: 0.9rem;
-    color: #333;
-    margin-top: 5px;
-}
-/* typewrite effectr */ 
-/* Style the typed text */
-#typed-output {
-    text-align: center;
-    display: inline-block;
-    font-size: 2rem; /* Match the font size */
-    font-weight: bold;
-    color: #01293d;
-    min-height: 2.5rem; /* Ensures the height stays consistent, matching the tallest string */
-}
-
-.typed-cursor {
-    font-size: 2rem; /* Match the font size of #typed-output */
-    color: #01293d; /* Match the text color */
-    vertical-align: baseline; /* Align cursor with the baseline of the text */
-    animation: blink 0.7s step-end infinite; /* Blinking effect */
-}
-
-/* Fix blinking cursor alignment */
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-
-.typewriter {
-    text-align: center; /* Center all child elements */
-    margin-bottom: 0; /* Remove extra space below */
-    padding: 0;
-    line-height: 1.2; /* Reduce line spacing */
-}
-
-.typewriter h1 {
-    margin: 0; /* Remove default margins */
-    font-size: 2.5rem; /* Adjust size as needed */
-}
-
-.typewriter h2 {
-    margin: 10px 0; /* Add consistent spacing */
-    font-size: 2rem; /* Adjust size as needed */
-    color: #01293d;
-    padding-top: 0%;
-}
-#typed-output:empty::before {
-    content: " "; /* Non-breaking space */
-    display: inline-block;
-}
-
-.highlight {
-    color: #3496c7; /* Replace with the exact blue color from your site */
-    font-weight: bold; /* Optional: Make it bold for emphasis */
 }
