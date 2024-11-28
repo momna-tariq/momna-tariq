@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+  <head> 
     <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Momna, Tariq, Website, Resume, Data"> <!-- keywords apparently outdated-->
+    <meta name="description" content="Explore Momna Tariq's personal website, 
+    showcasing a professional resume, data projects, and insights into web design.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (for interactive components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- typewriter -->
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Momna Tariq</title>
 </head>
 
 <body>
 
     <!-- Main Header Section -->
-  <header>
-    <nav>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="Experience.html">Experience</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Exhibit.html">Exhibit</a>
-        <a href="Contact.html">Contact</a>
-
+    <header>
+      <div class="container">
+          <nav>
+              <div class="nav-links d-flex justify-content-center gap-0">
+                  <a href="index.html">Home</a>
+                  <a href="Skills.html">Skills</a>
+                  <a href="Projects.html">Projects</a>
+                  <a href="Scenes.html">Scenes</a>
+                  <a href="Contact.html">Contact</a>
+              </div>                
+          </nav>
       </div>
-    </nav>
-
-    <h2> Contact Me</h2>
-  </header>
+    
+    </header>
 
     <!-- Main Content -->
-  <main>
     <section class="contact">
-      <!-- Form for collecting contact information -->
-      <form id="contactForm"> <!-- Added id="contactForm" for JavaScript targeting -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- id="name" to match JavaScript -->
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- id="email" to match JavaScript -->
-  
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea> <!-- id="message" to match JavaScript -->
-  
-        <button type="submit">Submit</button> <!-- Submit button for form submission -->
-        <button type="button" id="clearStorage">Reset/Clear</button> <!-- Added id="clearStorage" for JavaScript targeting -->
-      </form>
+      <div class="container" id="contact-socials">
+
+        <h2 class="contact-header">Follow Me</h2>
+
+        <div class="container">
+          <a href="https://www.linkedin.com/in/momnatariq/"  target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/momna-tariq/momna-tariq.github.io" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://open.spotify.com/user/momna25?si=97bd3c715b8c46d3" target="_blank">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href= "mailto:momna.tariq@torontomu.ca" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href= "https://vsco.co/momna-jpg/gallery" target="_blank">
+            <i class="fa-solid fa-camera-retro"></i>
+          </a>
+          <a href="Momna Tariq Resume.pdf" target="_blank">
+            <i class="fas fa-file"></i>
+        </a> 
+        </div>
+
+
+        <h2 class="contact-header">Contact Me</h2>
+        <!-- Form for collecting contact information -->
+        <form id="contactForm" class="row g-3"> <!-- Added id="contactForm" for JavaScript targeting -->
+          <div class="col-md-12">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required> <!-- id="name" to match JavaScript -->
+          </div>
+
+          <div class="col-md-12">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required> <!-- id="email" to match JavaScript -->
+          </div>
+        
+          <div class="col-md-12">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" rows="8" id="message" required="" placeholder= "Enter your message" ></textarea> <!-- id="message" to match JavaScript -->
+          </div>
+        
+          <div class="col-md-12">
+          <button type="submit">Submit</button> <!-- Submit button for form submission -->
+          <button type="button" id="clearStorage">Reset/Clear</button> <!-- Added id="clearStorage" for JavaScript targeting -->
+          </div>
+        </form>
+      </div>
     </section>
-  </main>
-  
   
 
     <!-- Footer Section -->
-  <footer class="bg-light text-center text-lg-start">
-    <div class="container p-4">
-      <a href="https://www.linkedin.com/in/momnatariq/" class="btn btn-outline-primary btn-sm">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/momna-tariq/momna-tariq.github.io" class="btn btn-outline-dark btn-sm">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </footer>
+    <footer class="text-center py-3">
+      &copy; Momna Tariq Personal Website 2024
+    </footer>
 
 </body>
 </html>
