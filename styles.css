@@ -19,13 +19,13 @@ a {
     color: black; /* Set the icon's initial color */
     text-decoration: none; /* Prevent underline */
     font-size: 23px; /* Adjust size as needed */
-    margin: 0 10px; /* Optional: Add space between icons */
+    margin: 0 11px; /* Optional: Add space between icons */
 }
 
 /* Center-align text in header,  p, and footer */
 header, p footer {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: none;
 }
 h1 {
@@ -38,10 +38,6 @@ h1 {
     line-height: 1.2; /* Reduce line spacing */
 }
 
-hr{
-    margin-left: 50px;
-    margin-right: 50px;
-}
 /* Targeting h2 specifically in the header */
 header h2, h2, h3  {
     text-align: left;
@@ -58,27 +54,26 @@ p {
     margin-top: 20px;
 }
 
-ol{
-    text-align: left;
-    margin-left: 40px; /* Add space from the left edge */
-    margin-right: 40px; /* Add space from the right edge */
-    padding-bottom: 30px;
-    margin-top: 20px;
-}
-
 /* Header styling */
 header {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
 }
-
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center-align the links */
+    gap: 5px; /* Adjust the gap as needed */
+}
 .nav-links a {
     text-decoration: none;
     color: #91bdd1;
-    padding: 10px;
+    padding: 1px;
+    padding-bottom: 15px;
     font-size: 11pt;
     transition: color 0.3s ease;
+    gap: 5px;
+    
 }
 .nav-links a:active {
     color: #3496c7;
