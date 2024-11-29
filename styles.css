@@ -243,7 +243,76 @@ footer {
     color: #3496c7; /* Replace with the exact blue color from your site */
     font-weight: bold; /* Optional: Make it bold for emphasis */
 }
-/* Adjust heading alignment */
+/* Skills Page */
+.skills-head{
+    font-size: 1.75rem; /* Match your design */
+    color: #92bed2; /* Keep the theme color */
+    font-weight: bold;
+    margin-left: 50px; /* Align header with icons */
+    margin-bottom: 5px; /* Add space below the header */
+}
+
+.skills-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #ffffff; /* Keep a white background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.language-head {
+    text-align: left;
+    margin-left: 0;
+    padding-top: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.skill {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Match your theme */
+}
+
+.skill span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #01293d; /* Dark blue for text */
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 30px;
+    background: #e6f7fc; /* Light blue for background bar */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #3496c7; /* Your original blue for progress */
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.5s ease-in-out; /* Smooth animation */
+}
+.skill-icon {
+    position: absolute; /* Position it within the .skill-bar */
+    right: 10px; /* Place it at the end of the bar */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    font-size: 25px; /* Adjust icon size */
+    color: #0288d1; /* Match your theme */
+}
+
 
 
 /* ---------------------- ignore at this point--------------------------- */ 
