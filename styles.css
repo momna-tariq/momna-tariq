@@ -248,13 +248,13 @@ footer {
     font-size: 1.75rem; /* Match your design */
     color: #92bed2; /* Keep the theme color */
     font-weight: bold;
-    margin-left: 50px; /* Align header with icons */
+    margin-left: 30px; /* Align header with icons */
     margin-bottom: 5px; /* Add space below the header */
 }
 
 .skills-wrapper {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 50px;
     padding: 20px;
     background: #ffffff; /* Keep a white background for contrast */
