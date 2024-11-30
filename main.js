@@ -62,3 +62,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// skills page
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.bar').forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+            bar.style.width = width;
+        }, 200);
+    });
+});
+
+// Scenes page Test
+// Carousel 1
+var images1 = ["SW/Grassi.jpeg", "SW/AnotherImage.jpeg"];
+var currentIndex1 = 0;
+var imageElement1 = document.getElementById("carousel-image1");
+
+document.getElementById("prev1").addEventListener("click", function () {
+  currentIndex1 = (currentIndex1 - 1 + images1.length) % images1.length;
+  imageElement1.src = images1[currentIndex1];
+});
+
+document.getElementById("next1").addEventListener("click", function () {
+  currentIndex1 = (currentIndex1 + 1) % images1.length;
+  imageElement1.src = images1[currentIndex1];
+});
+
+// Carousel 2
+var images2 = ["Ex/Spain.jpeg", "ML/Mountain2.jpeg"];
+var currentIndex2 = 0;
+var imageElement2 = document.getElementById("carousel-image2");
+
+document.getElementById("prev2").addEventListener("click", function () {
+  currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
+  imageElement2.src = images2[currentIndex2];
+});
+
+document.getElementById("next2").addEventListener("click", function () {
+  currentIndex2 = (currentIndex2 + 1) % images2.length;
+  imageElement2.src = images2[currentIndex2];
+});
+
+
+
