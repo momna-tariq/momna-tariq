@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Scenes page Test
 // Carousel 1
-var images1 = ["SW/Grassi.jpeg", "SW/AnotherImage.jpeg"];
+var images1 = ["SW/Barcelona.jpeg", "SW/Bonfire.jpeg"];
 var currentIndex1 = 0;
 var imageElement1 = document.getElementById("carousel-image1");
 
@@ -91,7 +91,7 @@ document.getElementById("next1").addEventListener("click", function () {
 });
 
 // Carousel 2
-var images2 = ["Ex/Spain.jpeg", "ML/Mountain2.jpeg"];
+var images2 = ["Ex/Spain.jpeg", "Ex/Art.jpeg", ];
 var currentIndex2 = 0;
 var imageElement2 = document.getElementById("carousel-image2");
 
