@@ -383,63 +383,88 @@ footer {
     color: #92bed2;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 0px; /* Space below the page heading */
+    margin-bottom: 0px;
     padding-left: 30px;
   }
   
-.carousel-frame {
-    width: 900px;
-    height: 600px;
+  /* Carousel Frame */
+  .carousel-frame {
+    width: 900px; /* Fixed width for desktop */
+    height: 600px; /* Fixed height for desktop */
     margin: auto;
-    background: white; /* Background color for white space */
-    overflow: hidden; /* Prevent overflow */
+    background: white;
+    overflow: hidden;
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
+    flex-direction: column;
     align-items: center;
     position: relative;
     padding-bottom: 20px;
-    }
-/* Carousel Heading */
-.carousel-heading {
+  }
+  
+  /* Carousel Heading */
+  .carousel-heading {
     font-size: 1.5rem;
     color: #92bed2;
     font-weight: bold;
-    text-align: left; /* Align the text to the left */
-    margin: 0; /* Remove any default margins */
-    padding: 10px 15px; /* Add some padding for spacing from the frame */
-    position: relative; /* Keep it positioned relative to the frame */
+    text-align: left;
+    margin: 0;
+    padding: 10px 15px;
+    position: relative;
   }
   
+  /* Carousel Images */
   .carousel-frame img {
     max-height: 100%; /* Fit height-wise */
     max-width: 100%; /* Adjust width proportionally */
-    object-fit: contain; /* Maintain aspect ratio with white space */
-    background: white; /* White space around smaller images */
+    object-fit: contain;
+    background: white;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .carousel-frame {
+      width: 100%; /* Full width on smaller screens */
+      height: auto; /* Automatically adjust height */
+    }
+  
+    .carousel-frame img {
+      max-height: 400px; /* Limit max height for mobile */
+      max-width: 100%;
+      object-fit: contain; /* Maintain aspect ratio */
+    }
+  
+    .scenes-heading {
+      font-size: 1.5rem; /* Smaller heading for mobile */
+      text-align: center; /* Center-align for mobile */
+      padding-left: 0; /* Remove left padding */
+    }
+  
+    .carousel-heading {
+      font-size: 1.25rem; /* Adjust carousel heading size */
+      text-align: center; /* Center-align */
+    }
   }
   
   .nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute; /* Position buttons relative to the frame */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for proper centering */
     background-color: #e2e9f0;
-    color: black;
     border: none;
-    border-radius: 0;
-    padding: 10px;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 10; /* Ensure buttons are above images */
   }
   
+  /* Left button */
   .nav-button.left {
-    left: 15px; /* Position on the left */
+    left: 15px; /* Position to the left of the frame */
   }
   
+  /* Right button */
   .nav-button.right {
-    right: 15px; /* Position on the right */
-  }
-  
-  .nav-button:hover {
-    background-color: #d2d6da; /* Darker blue on hover */
+    right: 15px; /* Position to the right of the frame */
   }
   
 /* ---------------------- ignore at this point--------------------------- */ 
