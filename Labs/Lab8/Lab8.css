@@ -229,6 +229,11 @@ footer {
     height: 55px;
 }
 /* Base styling for the color mode button */
+.colorblind-mode {
+    background-color: black; /* Dark mode */
+    color: yellow; /* High contrast text */
+}
+
 .color-mode-button {
     width: auto;
     padding: 10px 15px;  /* Add more padding for better spacing */
