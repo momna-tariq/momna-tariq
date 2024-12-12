@@ -1,0 +1,82 @@
+<!-- https://momna-tariq.github.io/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Lab8.css">
+    <script src="Lab8.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Exhibit</title>
+    
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="nav-links">
+            <a href="Lab8.html">Home</a>
+            <a href="Exhibit.html">Exhibit</a>           
+        </div>
+        
+    </nav>
+</header>
+
+  <!-- Text size buttons + Accessible View for visually impaired-->
+  <div style="margin: 20px;">
+    <button onclick="setTextSize('small')" class="text-size-button small">A</button>
+    <button onclick="setTextSize('medium')" class="text-size-button medium">A</button>
+    <button onclick="setTextSize('large')" class="text-size-button large">A</button> <br>
+    <button onclick="toggleColorMode()" class="color-mode-button">Accessible View</button>
+</div>
+
+    <section id="guitar-exhibit">
+        <h2>Guitar Performance</h2>
+        <video id="guitar-video" width="400" height="250" controls>
+            <source src="guitar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <p>Personal recording of a guitar performance. <br>Recorded by Momna Tariq, 2024.</p>
+    </section>
+
+  <div class="image-gallery-grid">
+      <!-- All image-container divs go here -->
+    <section id="image-gallery">
+      <h2>Image Gallery</h2>
+  
+      <div class="image-container">
+          <img src="Spain.jpeg" alt="Sacred Heart of Jesus Church, Tibidabo, Barcelona, Spain, with intricate architecture and a statue of Jesus at the top" id="image1">
+          <button onclick="toggleAltText('image1-alt')" class="alt-text-button">Show Description</button>
+          <p id="image1-alt" class="alt-text" style="display: none;">Sacred Heart of Jesus Church, Tibidabo, Barcelona, Spain. Photo taken by Momna Tariq, June 2022.</p>
+      </div>
+  
+      <div class="image-container">
+          <img src="Grassi.jpeg" alt="A person standing by the water at Grassy Lakes, Alberta, Canada, surrounded by rocky shores and mountains." id="image2">
+          <button onclick="toggleAltText('image2-alt')" class="alt-text-button">Show Description</button>
+          <p id="image2-alt" class="alt-text" style="display: none;">Grassi Lakes, Alberta, Canada. Photo taken by Momna Tariq, May 2024.</p>
+      </div>
+  
+      <div class="image-container">
+          <img src="Louise.JPG" alt="Momna in a puffer jacket standing in front of Lake Louise, Alberta, Canada, with snow-capped mountains in the background." id="image3">
+          <button onclick="toggleAltText('image3-alt')" class="alt-text-button">Show Description</button>
+          <p id="image3-alt" class="alt-text" style="display: none;">Momna in front of Lake Louise, Alberta, Canada. Photo taken by Momna Tariq, May 2024.</p>
+      </div>
+  </div>
+  </section>
+  
+  
+  
+    
+    
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+          <a href="https://www.linkedin.com/in/momnatariq/" class="btn btn-outline-primary btn-sm">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/momna-tariq/momna-tariq.github.io" class="btn btn-outline-dark btn-sm">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
